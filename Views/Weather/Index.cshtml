@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Weather Dashboard";
+}
+
+<!-- Heading for the page -->
+<h2>Select a city to get the weather information:</h2>
+
+<!-- Buttons to select predefined cities -->
+<div>
+    <button onclick="location.href='@Url.Action("GetWeather", "Weather", new { city = "New York" })'">New York</button>
+    <button onclick="location.href='@Url.Action("GetWeather", "Weather", new { city = "London" })'">London</button>
+    <button onclick="location.href='@Url.Action("GetWeather", "Weather", new { city = "Tokyo" })'">Tokyo</button>
+    <button onclick="location.href='@Url.Action("GetWeather", "Weather", new { city = "Sydney" })'">Sydney</button>
+    <button onclick="location.href='@Url.Action("GetWeather", "Weather", new { city = "Paris" })'">Paris</button>
+</div>

@@ -1,0 +1,9 @@
+@model WeatherDashboard.Models.WeatherInfo
+
+<!-- Display weather information for the selected city -->
+<h2>Weather in @Model.City</h2>
+<p>Description: @Model.Description</p>
+<p>Temperature: @Model.Temperature °C</p>
+<p>Humidity: @Model.Humidity %</p>
+<p>Wind Speed: @Model.WindSpeed m/s</p>
+<a href="@Url.Action("Index", "Weather")">Search Another City</a>
